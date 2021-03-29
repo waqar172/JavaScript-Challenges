@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>About Me</title>
+  <style>
+    .listitem {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>About Me</h1>
+
+  <ul>
+    <li>Nickname:
+      <span id="nickname"></span>
+    </li>
+    <li>Favorites:
+      <span id="favorites"></span>
+    </li>
+    <li>Hometown:
+      <span id="hometown"></span>
+    </li>
+   </ul>
+
+  <script>
+   document.body.style.fontFamily = 'Arial, sans-serif';
+   document.getElementById('nickname').innerHTML = 'Ada Lovelace';
+   document.getElementById('favorites').innerHTML = 'computers';
+   document.getElementById('hometown').innerHTML = 'London, England';
+
+   var items = document.getElementsByTagName('li');
+
+   for (var i = 0; i < items.length; i++) {
+      items[i].className = 'listitem';
+   }
+
+    var myPic = document.createElement('img');
+
+    myPic.src = https://images.unsplash.com/photo-1616788494668-50d2b041209f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80.jpg';
+
+    document.body.appendChild(myPic);
+    </script> 
+    </body>
+</html>    
